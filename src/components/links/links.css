@@ -1,0 +1,12 @@
+.menu {
+    @apply bg-white w-[calc(100%-4rem)] absolute left-8 top-full p-6 mt-6 flex flex-col items-center gap-4 rounded before:bg-gradient-to-b before:from-[hsl(233,26%,24%)] before:w-[calc(100%+4rem)] before:h-[calc(100vh-68px)] before:absolute before:-top-7 before:-left-8 before:-z-10;
+}
+.menu.open {
+    @apply w-fit py-1 static bg-white flex-row p-0 m-0 before:content-none;
+}
+.menu .link {
+    @apply font-public_sans font-semibold text-[hsl(233,8%,62%)] capitalize text-lg relative hover:text-[hsl(233,26%,24%)] hover:after:w-full hover:after:h-1 hover:after:bg-gradient-to-r hover:after:from-[hsl(136,65%,51%)] hover:after:to-[hsl(192,70%,51%)] hover:after:absolute hover:after:-bottom-2 hover:after:left-0 hover:after:rounded-full transition-colors after:transition-all after:duration-200;
+}
+.menu.open .link {
+    @apply text-base;
+}

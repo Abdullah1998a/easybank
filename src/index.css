@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "public-sans";
+  src: url("./assets/fonts/public-sans.ttf");
+}
+::-webkit-scrollbar {
+  @apply hidden;
+}
+body {
+  @apply font-public_sans;
+}
+@layer base {
+  .btn {
+    @apply bg-gradient-to-r from-[hsl(136,65%,51%)] to-[hsl(192,70%,51%)] rounded-full py-2 px-5 text-white font-public_sans font-medium;
+  }
+}
